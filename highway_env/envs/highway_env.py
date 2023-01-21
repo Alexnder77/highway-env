@@ -34,7 +34,7 @@ class HighwayEnv(AbstractEnv):
             "lanes_count": 4,
             "vehicles_count": 50,
             "controlled_vehicles": 1,
-            "initial_lane_id": None,
+            "initial_lane_id": 0,
             "duration": 40,  # [s]
             "ego_spacing": 2,
             "vehicles_density": 1,
@@ -44,7 +44,7 @@ class HighwayEnv(AbstractEnv):
             "high_speed_reward": 0.4,  # The reward received when driving at full speed, linearly mapped to zero for
                                        # lower speeds according to config["reward_speed_range"].
             "lane_change_reward": 0,   # The reward received at each lane change action.
-            "reward_speed_range": [20, 30],
+            "reward_speed_range": [20, 100],
             "normalize_reward": True,
             "offroad_terminal": False
         })
